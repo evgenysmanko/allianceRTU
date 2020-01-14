@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AllianceApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_cafedra">Кафедра</string>
+    <string name="title_sportclub">Спортклуб</string>
+    <string name="title_collectings">Сборные</string>
 </resources>
