@@ -8,25 +8,21 @@
     <fragment
         android:id="@+id/navigation_sportclub"
         android:name="com.example.allianceapp.ui.sportclub.SportclubFragment"
-        android:label="@string/title_sportclub"
         tools:layout="@layout/fragment_sportclub" />
 
     <fragment
         android:id="@+id/navigation_cafedra"
         android:name="com.example.allianceapp.ui.cafedra.CafedraFragment"
-        android:label="@string/title_cafedra"
         tools:layout="@layout/fragment_cafedra" />
 
     <fragment
         android:id="@+id/navigation_nationalteams"
         android:name="com.example.allianceapp.ui.nationalteams.NationalTeamsFragment"
-        android:label="@string/title_collectings"
         tools:layout="@layout/fragment_nationalteams" />
 
     <fragment
-        android:id="@+id/navigation_mainactivity"
-        android:name="com.example.allianceapp.ui.mainactivity.MainActivityFragment"
-        android:label="@string/title_activity_main"
-        tools:layout="@layout/fragment_mainactivity" />
+        android:id="@+id/navigation_news"
+        android:name="com.example.allianceapp.ui.news.NewsFragment"
+        tools:layout="@layout/fragment_news" />
 
 </navigation>

@@ -5,15 +5,12 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class SportclubViewModel : ViewModel() {
+    private val mText: MutableLiveData<String>
+    val text: LiveData<String>
+        get() = mText
 
-    var mText: MutableLiveData<String>? = null
-
-    fun SportclubViewModel() {
+    init {
         mText = MutableLiveData()
-        mText!!.value = "ССК Альянс"
-    }
-
-    fun getText(): LiveData<String>? {
-        return mText
+        mText.value = "Спортклуб"
     }
 }
