@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_sportclub">
+
+    <fragment
+        android:id="@+id/navigation_sportclub"
+        android:name="com.example.allianceapp.ui.sportclub.SportclubFragment"
+        android:label="@string/title_sportclub"
+        tools:layout="@layout/fragment_sportclub" />
+
+    <fragment
+        android:id="@+id/navigation_cafedra"
+        android:name="com.example.allianceapp.ui.cafedra.CafedraFragment"
+        android:label="@string/title_cafedra"
+        tools:layout="@layout/fragment_cafedra" />
+
+    <fragment
+        android:id="@+id/navigation_nationalteams"
+        android:name="com.example.allianceapp.ui.nationalteams.NationalTeamsFragment"
+        android:label="@string/title_collectings"
+        tools:layout="@layout/fragment_nationalteams" />
+
+    <fragment
+        android:id="@+id/navigation_mainactivity"
+        android:name="com.example.allianceapp.ui.mainactivity.MainActivityFragment"
+        android:label="@string/title_activity_main"
+        tools:layout="@layout/fragment_mainactivity" />
+
+</navigation>
