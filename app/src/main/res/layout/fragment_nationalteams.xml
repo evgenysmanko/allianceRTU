@@ -11,7 +11,7 @@
         android:layout_height="120dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="football"
+        android:text="@string/football"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,7 +21,7 @@
         android:layout_height="120dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="basketball"
+        android:text="@string/basketball"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_football_team" />
 

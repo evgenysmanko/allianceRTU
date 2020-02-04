@@ -14,5 +14,4 @@ class NationalTeamsViewModel : ViewModel() {
         mText.value = "Сборные"
     }
 
-
 }

@@ -5,41 +5,44 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.example.allianceapp.R
-import com.example.allianceapp.ui.nationalteams.basketball.BasketballTeamFragment
-import com.example.allianceapp.ui.nationalteams.cheerleading.CheerleadingTeamFragment
-import com.example.allianceapp.ui.nationalteams.football.FootballTeamFragment
-import com.example.allianceapp.ui.nationalteams.handball.HandballTeamFragment
-import com.example.allianceapp.ui.nationalteams.volleyball.VolleyballTeamFragment
 
 class NationalTeamsFragment : Fragment() {
-    private var NationalTeamsViewModel: NationalTeamsViewModel? = null
-    override fun onCreateView(inflater: LayoutInflater,
-                              container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        NationalTeamsViewModel = ViewModelProviders.of(this).get<NationalTeamsViewModel>(com.example.allianceapp.ui.nationalteams.NationalTeamsViewModel::class.java)
+    lateinit var NationalTeamsViewModel: NationalTeamsViewModel
+
+    companion object;
+
+    private lateinit var viewModel: NationalTeamsViewModel
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View {
+        val allSportsIntent = Intent(activity, NationalTeamActivity::class.java)
+
+        val clickListner = View.OnClickListener {
+            allSportsIntent.putExtra(String(), view!!.id)
+            startActivity(allSportsIntent)
+        }
+
+        container!!.findViewById<Button>(R.id.btn_cheerleading).setOnClickListener(clickListner)
+        container.findViewById<Button>(R.id.btn_backetball_team).setOnClickListener(clickListner)
+        container.findViewById<Button>(R.id.btn_handball_team).setOnClickListener(clickListner)
+        container.findViewById<Button>(R.id.btn_volleyball_team).setOnClickListener(clickListner)
+        container.findViewById<Button>(R.id.btn_football_team).setOnClickListener(clickListner)
+
         return inflater.inflate(R.layout.fragment_nationalteams, container, false)
     }
 
 
-    fun goToFragmentsNationalTeams() {
-
-        val footballIntent = Intent(context, FootballTeamFragment::class.java)
-        startActivity(footballIntent)
-
-        val basketballIntent = Intent(context, BasketballTeamFragment::class.java)
-        startActivity(basketballIntent)
-
-        val cheerleadingIntent = Intent(context, CheerleadingTeamFragment::class.java)
-        startActivity(cheerleadingIntent)
-
-        val handballIntent = Intent(context, HandballTeamFragment::class.java)
-        startActivity(handballIntent)
-
-        val volleyballIntent = Intent(context, VolleyballTeamFragment::class.java)
-        startActivity(volleyballIntent)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        viewModel = activity?.run {
+            ViewModelProviders.of(this)[NationalTeamsViewModel::class.java]
+        } ?: throw Exception("Invalid Activity")
     }
+}
 
 
     /* override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -52,4 +55,3 @@ class NationalTeamsFragment : Fragment() {
          }
          return super.onOptionsItemSelected(item)
      } */
-}

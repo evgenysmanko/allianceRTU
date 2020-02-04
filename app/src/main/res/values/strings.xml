@@ -22,4 +22,6 @@
     <string name="title_football">title football</string>
     <string name="history_football">history football</string>
     <string name="logo_football">logo football</string>
+    <string name="football">football</string>
+    <string name="basketball">basketball</string>
 </resources>
