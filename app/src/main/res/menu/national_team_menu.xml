@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/table_plays"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="table plays" />
+
+    <item
+        android:id="@+id/table_results"
+        android:icon="@drawable/ic_rss_ssc_24dp"
+        android:title="table results" />
+
+    <item
+        android:id="@+id/table_achivements"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="table_achivements" />
+
+    <item
+        android:id="@+id/table_equipe"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="table_equipe" />
+
+    <item
+        android:id="@+id/table_contacts"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="table_contacts" />
+</menu>

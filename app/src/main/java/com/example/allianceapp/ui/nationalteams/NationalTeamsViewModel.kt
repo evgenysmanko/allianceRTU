@@ -13,4 +13,6 @@ class NationalTeamsViewModel : ViewModel() {
         mText = MutableLiveData()
         mText.value = "Сборные"
     }
+
+
 }

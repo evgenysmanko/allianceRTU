@@ -11,4 +11,15 @@
     <string name="information_center">Инфо блок</string>
     <string name="join_us">Join Us</string>
     <string name="our_brand">Наш бренд</string>
+    <string name="logo_cheerleading">logo_cheerleading</string>
+    <string name="histoiry_cheerleading">histoiry_cheerleading</string>
+    <string name="title_cheerleading">title_cheerleading</string>
+    <string name="title_basketball">title basketball</string>
+    <string name="logo_handball">logo handball</string>
+    <string name="title_handball">title handball</string>
+    <string name="histoiry_handball">history handball</string>
+    <string name="logo_basketball">logo basketball</string>
+    <string name="title_football">title football</string>
+    <string name="history_football">history football</string>
+    <string name="logo_football">logo football</string>
 </resources>
